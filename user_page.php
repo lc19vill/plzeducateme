@@ -45,6 +45,7 @@ echo '<tr>
 			555-3332
 		</td>
 	</tr>';
+
 while ($row1 = $sql->fetch_row()){
     $result = run_query("SELECT * FROM request where pteacher=$tid");
     while ($row2 = $result->fetch_row()){ 
@@ -61,7 +62,7 @@ while ($row1 = $sql->fetch_row()){
     
 }
 echo '</table>';
-
+echo '<a href="accept.php?tid='.$tid.'&sid='.$row2[0].'"class="btn btn-danger btn-lg">Panic!</a>'
 #$result->close();
 
 echo '</div>';
