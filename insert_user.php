@@ -1,6 +1,5 @@
 <?
-session_start();
-if (!$_SESSION['authenticated']) die ('Access Denied');
+
 require_once('site_forms.php');
 require_once('site_core.php');
 require_once('site_db.php');
