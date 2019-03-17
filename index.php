@@ -8,10 +8,12 @@ Get the pageid from the URL and generate a page
 ----------------------------------------------------------------------------- */
 
 // If the page is null, use the default pageid
-if ($_GET['pageid'] == null) 
-	$idpage = 'home';
-else 
-	$idpage = $_GET['pageid'];	 
+//if ($_GET['pageid'] == null) 
+	//$idpage = 'home';
+//else 
+	//$idpage = $_GET['pageid'];	 
+
+$idpage = 'home';
 
 // Echo the major parts of the page from head to foot
 echo_head('Plz Educate Me');
