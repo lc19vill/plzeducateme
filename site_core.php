@@ -57,7 +57,7 @@ Input: The current page id (string)
 Output: HTML text (string)	
 ----------------------------------------------------------------------------- */
 function return_content($pageid) {   	
-	$sql = "SELECT title, content, parent FROM pages WHERE pageid = '".$pageid."'";
+	$sql = "SELECT title, content FROM pages WHERE pageid = '".$pageid."'";
 	$content = run_query($sql)->fetch_assoc();
 	
     if ($pageid == 'home'){
