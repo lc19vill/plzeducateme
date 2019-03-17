@@ -106,11 +106,17 @@ Output: HTML text (string)
 function return_user_form($values) {
 	return '
 		<form action="?action=insert" method="post">'.
-			return_input_text('id','User ID',$values['id'],true).
-			return_input_text('name','Name',$values['name'],true).
-			return_input_password('passwd','Password',$values['passwd'],true).
-			return_input_text('phonenumber','Phone Number',$values['phonenumber'],true).
-			return_input_text('estresponsetime','Estimated Response Time',$values['estresponsetime'],true).'
+			#return_input_text('id','User ID',$values['id'],true).
+			#return_input_text('name','Name',$values['name'],true).
+			#return_input_password('passwd','Password',$values['passwd'],true).
+			#return_input_text('phonenumber','Phone Number',$values['phonenumber'],true).
+			#return_input_text('estresponsetime','Estimated Response Time',$values['estresponsetime'],true).'
+			
+			return_input_text('id','User ID',$values[0],true).
+			return_input_text('name','Name',$values[1],true).
+			return_input_password('passwd','Password',$values[2],true).
+			return_input_text('phonenumber','Phone Number',$values[3],true).
+			return_input_text('estresponsetime','Estimated Response Time',$values[4],true).'
 			<input type="submit" class="btn btn-primary" value="Submit">
 			<a href="?" class="btn btn-warning">Clear</a>
 		</form>';
