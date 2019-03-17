@@ -18,8 +18,8 @@ else if($_POST) {
 	
 		
 	$user_submitted_password = $_POST['pwd'];
-	$userid = $_POST['usr'];
-	$result = run_query("SELECT passwd FROM a01sama_users WHERE userid = '$userid'");
+	$id = $_POST['usr'];
+	$result = run_query("SELECT passwd FROM users WHERE id = '$id'");
 	$row = $result->fetch_assoc();
 	$hashed_password = $row['passwd'];
 	
