@@ -31,6 +31,20 @@ echo '</tr>';
 $result->close();
 
 $sql = run_query("SELECT * FROM subject where id=$tid");
+echo '<tr>
+		<td>
+			<a href="accept.php?tid='.$tid.'&sid='.$row2[0].'"class="btn btn-success">Accept</a>
+		</td>
+		<td>
+			Luis
+		</td>
+		<td>
+			Math
+		</td>
+		<td>
+			555-3332
+		</td>
+	</tr>'
 while ($row1 = $sql->fetch_row()){
     $result = run_query("SELECT * FROM request where pteacher=$tid");
     while ($row2 = $result->fetch_row()){ 
