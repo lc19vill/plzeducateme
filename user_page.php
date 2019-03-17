@@ -48,7 +48,7 @@ while ($row1 = $sql->fetch_row()){
 }
 echo '</table>';
 
-$result->close();
+#$result->close();
 
 echo '</div>';
 
