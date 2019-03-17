@@ -66,7 +66,7 @@ function echo_nav($short_title, $current_page) {
 		$pageid = $page_lv1['pageid'];
 		$title = $page_lv1['title'];
 		
-		$pages_level2 = run_query("SELECT pageid, title FROM a01sama_pages WHERE parent = '".$pageid."'");
+		$pages_level2 = run_query("SELECT pageid, title FROM pages WHERE parent = '".$pageid."'");
 		
 		if ($pages_level2->num_rows === 0) {
 		 	echo_nav_item($pageid, $title, $current_page);
