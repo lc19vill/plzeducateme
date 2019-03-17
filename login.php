@@ -24,7 +24,7 @@ else if($_POST) {
 	#$hashed_password = $row['passwd'];
 	$password = $row['passwd'];
 	#if (password_verify($user_submitted_password, $hashed_password)) {
-    if ($user_submitted_password == $password)
+    if ($user_submitted_password == $password){
 		$_SESSION['authenticated'] = true;
 		header("Location: user.php");  #Change location to user page
 	} else {
