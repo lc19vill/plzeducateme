@@ -30,7 +30,7 @@ echo '</tr>';
 
 $result->close();
 
-$sql = run_query("SELECT * FROM subject where id=$tid")
+$sql = run_query("SELECT * FROM subject where id=$tid");
 while ($row1 = $sql->fetch_row()){
     $result = run_query("SELECT * FROM request where pteacher=$tid and teacher!='none' or teacher='none' and subject=$row1[1]");
     while ($row2 = $result->fetch_row()){ 
