@@ -62,7 +62,8 @@ while ($row1 = $sql->fetch_row()){
     
 }
 echo '</table>';
-echo '<a href="accept.php?tid='.$tid.'&sid='.$row2[0].'"class="btn btn-danger btn-lg">Panic!</a>'
+echo '<a href="accept.php?tid='.$tid.'&sid='.$row2[0].'"class="btn btn-danger btn-lg">Panic!</a>';
+echo '<a href="accept.php?tid='.$tid.'&sid='.$row2[0].'"class="btn btn-warning btn-lg">Request,/a>';
 #$result->close();
 
 echo '</div>';
