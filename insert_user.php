@@ -31,7 +31,7 @@ if ($_POST && $_GET['action']=="insert") {
 }	
 else {
 	// If there is no posted data or no URL insert action
-	echo_user_form();
+	echo_user_form($_POST);
 }
 
 echo '
