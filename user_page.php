@@ -32,17 +32,17 @@ $result->close();
 
 $sql = run_query("SELECT * FROM subject where id=$tid");
 while ($row1 = $sql->fetch_row()){
-    $result = run_query("SELECT * FROM request where pteacher=$tid and teacher!='none' or teacher='none' and subject=$row1[1]");
+    $result = run_query("SELECT * FROM request where pteacher=$tid or teacher='none' and subject=$row1[1]");
     while ($row2 = $result->fetch_row()){ 
         echo '<tr>
                     <td>
                         <a href="accept.php?tid='.$tid.'&sid='.$row2[0].'"class="btn btn-success">Accept</a>
                     </td>';
         // Loops for each column in a row
-	    foreach ($row as $value) {
-		   echo '<td>'.$value.'</td>';
-	    }
-	    echo '</tr>';
+	foreach ($row as $value) {
+		 echo '<td>'.$value.'</td>';
+	 }
+	 echo '</tr>';
     }
     
 }
