@@ -8,7 +8,8 @@ echo '
 	<div class="container">
 		<h2 class="head">'.$title.'</h2>';
 if ($_SESSION['authenticated']) {
-	header("Location: user_page.php");  #Change location to user page
+	$tid = $_GET['usr']
+	header("Location: user_page.php?tid='$tid'");  #Change location to user page
 
 }
 else if($_POST) {
@@ -26,7 +27,7 @@ else if($_POST) {
 	#if (password_verify($user_submitted_password, $hashed_password)) {
     if ($user_submitted_password == $password){
 		$_SESSION['authenticated'] = true;
-		header("Location: user_page.php");  #Change location to user page
+		header("Location: user_page.php?tid='$userid'");  #Change location to user page
 	} else {
 		echo 'Invalid password.';
 	}
