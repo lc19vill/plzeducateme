@@ -17,7 +17,7 @@ else if($_POST) {
 	echo_head($title);
 	
 		
-	$user_submitted_password = $_POST['pwd'];
+	$user_submitted_password = $_POST['passwd'];
 	$id = $_POST['usr'];
 	$result = run_query("SELECT passwd FROM users WHERE id = '$id'");
 	$row = $result->fetch_assoc();
