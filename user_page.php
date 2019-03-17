@@ -39,7 +39,7 @@ while ($row1 = $sql->fetch_row()){
                         <a href="accept.php?tid='.$tid.'&sid='.$row2[0].'"class="btn btn-success">Accept</a>
                     </td>';
         // Loops for each column in a row
-	foreach ($row as $value) {
+	foreach ($row2 as $value) {
 		 echo '<td>'.$value.'</td>';
 	 }
 	 echo '</tr>';
