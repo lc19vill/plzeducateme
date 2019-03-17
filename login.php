@@ -8,8 +8,7 @@ echo '
 	<div class="container">
 		<h2 class="head">'.$title.'</h2>';
 if ($_SESSION['authenticated']) {
-	$tid = $_GET['usr']
-	header("Location: user_page.php?tid='$tid'");  #Change location to user page
+	header("Location: user_page.php");  #Change location to user page
 
 }
 else if($_POST) {
