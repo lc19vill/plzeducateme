@@ -8,7 +8,7 @@ Input: SQL Statement (string)
 Output: MySQLi result object (iterator) 	
 ----------------------------------------------------------------------------- */
 function run_query($sql) {
-  $mysqli = new mysqli('localhost', 'root', 'mouse', 'plzeducateme-sql-instance');
+  $mysqli = new mysqli('localhost', 'root', 'mouse', 'plzeducateme');
   #$mysqli = new mysqli('104.154.215.21', 'bk30davi', '$HackRPI2019', 'plzeducateme-sql-instance');
   if ($mysqli->connect_errno) {
     die('Failed to connect to MySQL: '.$mysqli->connect_error);
