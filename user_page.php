@@ -33,7 +33,7 @@ $result->close();
 $sql = run_query("SELECT * FROM subject where id=$tid");
 echo '<tr>
 		<td>
-			<a href="accept.php?tid='.$tid.'&sid='.$row2[0].'"class="btn btn-success">Accept</a>
+			<a href="https://forms.zoho.com/sienamlhtest/report/INEEDHELP_Report/records/web"class="btn btn-success">Accept</a>
 		</td>
 		<td>
 			Luis
@@ -62,8 +62,8 @@ while ($row1 = $sql->fetch_row()){
     
 }
 echo '</table>';
-echo '<a href="accept.php?tid='.$tid.'&sid='.$row2[0].'"class="btn btn-danger btn-lg">Panic!</a>';
-echo '<a href="accept.php?tid='.$tid.'&sid='.$row2[0].'"class="btn btn-warning btn-lg">Request,/a>';
+echo '<a href="https://zfrmz.com/xLzi2uZ9Pyo9yf1hOUsi"class="btn btn-danger btn-lg">Panic!</a>';
+echo '<a href="https://zfrmz.com/xLzi2uZ9Pyo9yf1hOUsi"class="btn btn-warning btn-lg">Request</a>';
 #$result->close();
 
 echo '</div>';
