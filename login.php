@@ -40,6 +40,7 @@ else {
 	<label>Userid: <input type="text" class="form-control" name="usr"></label>
 	<label>passwd: <input type="password" class="form-control" name="pwd"></label>
 	<input type="submit" class="btn btn-primary">	
+	<a href="insert_user.php"" class="btn btn-info">Sign up</a>
 	</form>';
 	echo '</div>';
 	echo_foot();	
